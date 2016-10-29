@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { Details } from '../details/details';
 
 import { GitHubService } from '../../providers/git-hub-service';
 
@@ -29,5 +30,9 @@ export class HomePage {
       // will be called when the Observable has completed without errors
       () => console.log('getRepos completed')
     );
+  }
+
+  goToDetails(repo) {
+    this.navCtrl.push(Details, {repo: repo});
   }
 }
