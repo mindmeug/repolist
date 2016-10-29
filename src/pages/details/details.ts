@@ -9,6 +9,7 @@ import { GitHubService } from '../../providers/git-hub-service';
   Ionic pages and navigation.
 */
 @Component({
+  selector: 'page-details',
   templateUrl: 'details.html',
   providers: [GitHubService]
 })
