@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
-import {Details} from '../details/details';
+import { Details } from '../details/details';
 
 import { GitHubService } from '../../providers/git-hub-service';
 
@@ -32,8 +32,7 @@ export class HomePage {
     );
   }
 
-  goToDetails(repo){
-    this.navCtrl.push(Details,{repo: repo});
+  goToDetails(repo) {
+    this.navCtrl.push(Details, {repo: repo});
   }
-
 }

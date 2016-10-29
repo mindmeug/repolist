@@ -20,9 +20,7 @@ export class GitHubService {
     return repos;
   }
 
-
-  getDetails(repo){
-
+  getDetails(repo) {
     let headers = new Headers();
     headers.append('Accept', 'application/vnd.github.VERSION.html');
 
